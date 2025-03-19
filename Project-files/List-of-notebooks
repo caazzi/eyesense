@@ -1,0 +1,5 @@
+1. Notebook - Analise exploratória
+2. Notebook - Checkagem de outliers e limpeza dos dados
+3. Notebook - Pré-processamento de imagem
+3. Notebook - Data Augmentation com os dados ja limpos
+4. Notebook - Treinamento do ResNet50
