@@ -12,7 +12,7 @@ import numpy as np
 # Predict
 
 app = FastAPI()
-
+app.state.model = load_model_from_gcp()
 # Allowing all middleware is optional, but good practice for dev purposes
 app.add_middleware(
     CORSMiddleware,
@@ -29,12 +29,10 @@ async def predict(img: UploadFile = File(...)):
         contents = await img.read()
         image = Image.open(io.BytesIO(contents))
 
-        X = prepare_image(image, 224, 224)
-        
-        model = load_model_from_gcp()
+        X = prepare_image(image, 299, 299)
          
         CLASS_NAMES = ['cataract', 'degeneration', 'diabets', 'glaucoma', 'hypertension', 'myopia', 'normal', 'others']
-        predictions = model.predict(X)
+        predictions = app.state.model.predict(X)
         predicted_class = CLASS_NAMES[np.argmax(predictions, axis=1)[0]]
 
         return JSONResponse(content={"result":predicted_class}, status_code=200)
