@@ -143,9 +143,6 @@ Please read `COLLABORATION.md` for details on our code of conduct and submission
 **George Silva**   -     [@gbs1234](https://github.com/gbs1234)
 **Joao Sales**     -     [@masalesvic](https://github.com/masalesvic)
 
-
-See the full list of contributors [here](https://github.com/your-username/resnet50-eye-disease-prediction/graphs/contributors).
-
 ---
 
 ## 📄 License
@@ -159,3 +156,4 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 - Thanks to the **open-source community** for their amazing tools 🔧
 - Shoutout to **researchers** advancing AI in healthcare 📢
 - Special thanks to **contributors & testers** 🫂
+
