@@ -33,14 +33,13 @@ def load_model_from_gcp():
     MODEL_BUCKET = "eyesense_model"
     MODEL_PATH = "model_Xception-02.keras"
     LOCAL_MODEL_PATH = "/tmp/model.keras"
-    
+
     # Download the model from GCS
     storage_client = storage.Client()
     bucket = storage_client.bucket(MODEL_BUCKET)
     blob = bucket.blob(MODEL_PATH)
     blob.download_to_filename(LOCAL_MODEL_PATH)
-    
+
     # Load the model
-    global model
     model = tf.keras.models.load_model(LOCAL_MODEL_PATH)
     return model
