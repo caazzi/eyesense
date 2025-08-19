@@ -139,8 +139,11 @@ Please read `COLLABORATION.md` for details on our code of conduct and submission
 ## ✒️ Authors
 
 **Claudio Azzi**   -     [@caazzi](https://github.com/caazzi)
+
 **Erika Chang**    -     [@erika-chang](https://github.com/erika-chang)
+
 **George Silva**   -     [@gbs1234](https://github.com/gbs1234)
+
 **Joao Sales**     -     [@masalesvic](https://github.com/masalesvic)
 
 ---
@@ -156,4 +159,5 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 - Thanks to the **open-source community** for their amazing tools 🔧
 - Shoutout to **researchers** advancing AI in healthcare 📢
 - Special thanks to **contributors & testers** 🫂
+
 
